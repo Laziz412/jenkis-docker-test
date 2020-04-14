@@ -6,7 +6,7 @@ pipeline {
 
             image 'python'
 
-            label 'any'
+            label 'master'
 
         } //docker
 
