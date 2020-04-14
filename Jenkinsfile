@@ -4,7 +4,7 @@ pipeline {
 
         docker {
 
-            image 'centos'
+            image 'python'
 
             label 'generic'
 
@@ -14,13 +14,13 @@ pipeline {
 
     stages {
 
-        stage("Check hostname of docker container") {
+        stage("Run hello world") {
 
             steps {
 
                 sh """
 
-                    cat /etc/hostname
+                    python hello-world.py
 
                 """
 
