@@ -6,7 +6,7 @@ pipeline {
 
             image 'python'
 
-            label 'generic'
+            label 'any'
 
         } //docker
 
